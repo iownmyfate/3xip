@@ -12,10 +12,10 @@ import { Prop } from '@nestjs/mongoose';
 })
 export class BaseSchema {
   @Prop()
-  public created_at!: number;
+  public created_at!: Date;
 
   @Prop()
-  public updated_at!: number;
+  public updated_at!: Date;
 
   // @Prop({ default: null })
   // deleted_at?: Date; // soft delete
