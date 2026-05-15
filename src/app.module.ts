@@ -24,7 +24,7 @@ import { LogModule } from './models/logs/log.module';
     LogModule,
   ],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [AppService, MiddlewareService],
 })
 export class AppModule {
   configure(consumer: MiddlewareConsumer) {
