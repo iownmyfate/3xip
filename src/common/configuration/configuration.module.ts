@@ -15,6 +15,7 @@ import { mongodbConfigSchema } from './schemas/mongodb.schema';
         NODE_ENV: Joi.string()
           .valid('development', 'production', 'test', 'provision', 'staging')
           .default('development'),
+        VERSION: Joi.string().default('1.0.0'),
         PORT: Joi.number().default(3000),
         ...mongodbConfigSchema(true),
       }),
