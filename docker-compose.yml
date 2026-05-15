@@ -4,7 +4,7 @@ services:
     container_name: 3xip-mongodb
     image: mongo
     ports:
-      - '27022:27017'
+      - '27086:27017'
     environment:
       - MONGO_INITDB_DATABASE=3xip
       - MONGO_INITDB_ROOT_USERNAME=root
