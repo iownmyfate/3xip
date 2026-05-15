@@ -1,0 +1,19 @@
+name: 3xip-services
+services:
+  mongodb:
+    container_name: 3xip-mongodb
+    image: mongo
+    ports:
+      - '27022:27017'
+    environment:
+      - MONGO_INITDB_DATABASE=3xip
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=example
+    restart: always
+    volumes:
+      - mongodb_data:/data/db
+      - mongodb_config:/data/configdb
+
+volumes:
+  mongodb_data:
+  mongodb_config:
