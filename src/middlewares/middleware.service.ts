@@ -4,7 +4,7 @@ import { renderFile } from 'ejs';
 import { CustomRequest } from '../common/types/custom-request.type';
 import { CustomResponse } from '../common/types/custom-response.type';
 import { ConfigService } from '@nestjs/config';
-import { LogRepository } from '../models/logs/log.repository';
+import { LogRepository } from '../database/logs/log.repository';
 
 type RenderFileFn = (
   path: string,

@@ -6,7 +6,7 @@ import { DatabaseModule } from './common/database/database.module';
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { join } from 'path';
 import { MiddlewareService } from './middlewares/middleware.service';
-import { LogModule } from './models/logs/log.module';
+import { LogModule } from './database/logs/log.module';
 
 @Module({
   imports: [
